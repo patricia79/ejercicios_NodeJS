@@ -29,13 +29,13 @@ try {
 console.log("Mes de 2 m");
 
 for (let index = 0; index < arrayJugadores.length; index++) {
-     if (arrayJugadores[index].h > 200) {
+     if (arrayJugadores[index].h > 2) {
           console.log(arrayJugadores[index].nom, arrayJugadores[index].h);
      }
 }
 
 for (const jugadora of arrayJugadores) {
-     if (jugadora.h > 200) {
+     if (jugadora.h > 2) {
           console.log(jugadora.nom, jugadora.h);
      }
 }
