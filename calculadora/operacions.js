@@ -7,31 +7,26 @@ Esta clase, además, deberá tener un método calcula(), que ejecute tal operaci
 
 Necesitamos acumular en un array 5 operaciones y ejecutarlas después en bucle mostrando el resultado por pantalla. */
 
+function Calculadora(operacio, operandoA, operandoB) {
+    const operaciones = [{
+    "suma": function(a,b){return a+b}
+    },{
+    "resta": function(a,b){return a-b},
+    },{
+    "multiplicar": function(a,b){return a*b},
+    },{
+    "modulo": function(a,b){return a%b}
+    }]
+  for (let i = 0; i < operaciones.length; i++) {
 
-class Operacion {
+    if(Object.keys(operaciones[i])[0] == operacio){
+     return operaciones[i][operacio](operandoA, operandoB)
 
-       
-    constructor(operacion, num1, num2) {
-       
-        this.operacion = operacion;
-        this.num1 = num1;
-        this.num2 = num2;
+    } else {
+        console.log('error')
     }
 
-    calcula() {
-
-        switch (this.operacion) {
-
-            case "suma":
-                return this.num1 + this.num2;
-            case "resta":
-                return this.num1 - this.num2;
-            case "multiplicacion":
-                return this.num1 * this.num2;
-            case "division":
-                return this.num1 / this.num2;
-            case "modulo":
-                return this.num1 % this.num2;
-        }
-    }
 }
+}
+
+console.log(Calculadora("resta", 4, 2));
