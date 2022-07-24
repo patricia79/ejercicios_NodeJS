@@ -31,7 +31,7 @@ try {
      ];
 
      // un coche que fallarà
-     let cocheIncorrecto = new Coche("coche7", 2000, "BMW", "2450GJD", "rojo", "ggoil");
+     let cocheIncorrecto = new Coche(2000, "BMW", "2450GJD", "rojo", "ggoil");
      console.log(cocheIncorrecto);
 
 } catch (error) {
@@ -57,6 +57,6 @@ haces un metodo setCoche(){
 un for
 que recorra el array
 If ( i % 2 == 0 ) arrayCoches[i].color = "azul"
-If ( i % 2 == 1 ) arrayCoches[i].color = "azul" 
+If ( i % 2 == 1 ) arrayCoches[i].color = "rojo" 
 
 */
