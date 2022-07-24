@@ -1,3 +1,18 @@
+/* Necessitem enregistrar informació de jugadors de basket: 
+
+- Nom
+- Edat
+- Alçada
+- Pes
+- Posició (Base, Escolta, Aler, Aler-Pivot, Pivot)
+
+Enregistrarem informació d'un conjunt de jugadors (8 en total).
+
+Mostra el nom i l'alçada dels jugadors que pasen dels 2 metres d'alçada.
+
+Mostra el nom i l'edad dels jugadors que tenen menys de 21 anys.  */
+
+
 let Jugadora = require("./class_Jugadora.js");
 
 try {
