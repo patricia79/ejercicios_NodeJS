@@ -18,4 +18,4 @@ class Coches {
     }
     }
 
-   
+   module.exports = Coches;
