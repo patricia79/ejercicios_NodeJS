@@ -46,7 +46,7 @@ class coches {
     }
     }
 
-    let Coche = require("./clases_aut.js");
+    let Coche = require("./clases_aut.js.js");
 
 try {
 
