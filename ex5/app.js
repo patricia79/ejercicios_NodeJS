@@ -55,10 +55,6 @@ for (const pokemon of arrayPokemons) {
     }
 }
 
-for (const pokemon of arrayPokemons){
-    console.log(`La Pokemona ${pokemon.nom} te els següents atacs:`);
-}
-
 console.log(arrayPokemons);
 console.table(arrayPokemons);
 console.table(arrayAtacs);
@@ -69,3 +65,4 @@ for (const pokemon of arrayPokemons) {
          console.log(`La Pokemona ${pokemon.nom} és de tipus ${pokemon.tipus} i te un nou nivell de ${ pokemon. sumarNivell()}`);
     }
 }
+
