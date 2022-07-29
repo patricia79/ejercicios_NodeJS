@@ -28,7 +28,7 @@ class Pokemon {
      }
 
      afegirAtac(atac) {
-        this.atacs.push(atac);
+        this.atacs.push(atac.nom, atac.potencia);
      }
 
      sumarNivell(){
