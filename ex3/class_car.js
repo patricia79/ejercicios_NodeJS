@@ -1,4 +1,4 @@
-class Coches {
+class Car {
     
     constructor(cilindrada, marca, matricula, color, combustible){
         this.cilindrada = cilindrada;
@@ -8,10 +8,10 @@ class Coches {
         this.combustible = combustible;
     
         if(!["benzina", "gasoil", "hibrid", "electric"].includes(combustible)){
-            throw new Error("Aquest no és una carburant vàlid.")
+            throw new Error("Aquest no és un carburant vàlid.")
             }
  }
 }
 
-module.exports = Coches;
+module.exports = Car;
    
