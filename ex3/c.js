@@ -1,21 +1,17 @@
-
-
 class Coches {
+    
+    constructor(cilindrada, marca, matricula, color, combustible){
+        this.cilindrada = cilindrada;
+        this.marca = marca;
+        this.matricula = matricula;
+        this.color = color
+        this.combustible = combustible;
+    
+        if(!["benzina", "gasoil", "hibrid", "electric"].includes(combustible)){
+            throw new Error("Aquest no és una carburant vàlid.")
+            }
+ }
+}
 
-    constructor(cilindrada, marca, matrícula, color, combustible){
-    this.cilindrada = cilindrada
-    this.marca = marca
-    this.matrícula = matrícula
-    this.color = color
-    this.combustible = combustible
-    this.tipus_combustible =  ["benzina", "g-oil", "hibrid", "electric"];
-    
-    if (!this.tipus_combustible.includes(combustible)){
-        throw new Error(tipus_combustible + " no és un combustible")
-    
-    }
-    
-    }
-    }
-
-   module.exports = Coches;
+module.exports = Coches;
+   
