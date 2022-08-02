@@ -14,14 +14,14 @@ Setea el color de los coches en posiciones impares a "rojo".
 
 Muestra la marca de los coches que tienen combustible de tipo "gasolina".  */
 
-let Coche = require("./c.js");
+let Car = require("./class_car");
 
 try {
   // inicialitza l'array de 6 cotxes
 
 let arrayCoches = [];
 
-let cotxe1 = new Coche(2000,"BMW", "2451GJD", "lila", "benzina")
+let car1 = new Car(2000,"BMW", "2451GJD", "lila", "benzina")
 let cotxe2 = new Coche(2000, "Audi", "2452GJD", "taronja", "g-oil")
 let cotxe3 = new Coche(2000,"Lexus", "2453GJD", "blanc", "hibrid")
 let cotxe4 = new Coche(2000,"Mercedes-Benz", "2454GJD", "negre", "electric")
